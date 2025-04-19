@@ -16,7 +16,6 @@ import clsx from "clsx";
 import { useState } from "react";
 
 import { siteConfig } from "@/config/site";
-import { SearchIcon } from "@/components/icons";
 
 export const serverItem = [
   { key: "bedtwlserver", label: "bedtwL Server", path: "/about/bedtwlserver" },
@@ -62,7 +61,7 @@ export const Navbar = () => {
           <NavbarItem className="flex">
           <Select
             className="w-72"
-            label="Servers"
+            label="About Servers"
             placeholder="Select a server"
             selectedKeys={selectedServer ? [selectedServer] : []}
             variant="bordered"
