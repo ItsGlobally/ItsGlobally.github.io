@@ -23,7 +23,6 @@ export const Logo: React.FC<IconSvgProps> = ({
   </svg>
 );
 
-
 export const DiscordIcon: React.FC<IconSvgProps> = ({
   size = 24,
   width,

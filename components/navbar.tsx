@@ -30,7 +30,9 @@ export const Navbar = () => {
     const selectedKey = Array.from(keys)[0] as string;
     setSelectedServer(selectedKey);
 
-    const selectedServer = serverItem.find(server => server.key === selectedKey);
+    const selectedServer = serverItem.find(
+      (server) => server.key === selectedKey,
+    );
     if (selectedServer) {
       router.push(selectedServer.path);
     }
@@ -50,7 +52,7 @@ export const Navbar = () => {
               <NextLink
                 className={clsx(
                   linkStyles({ color: "foreground" }),
-                  "data-[active=true]:text-primary data-[active=true]:font-medium"
+                  "data-[active=true]:text-primary data-[active=true]:font-medium",
                 )}
                 color="foreground"
                 href={item.href}
@@ -87,7 +89,6 @@ export const Navbar = () => {
             <Button>
               <Github className="w-5 h-5" />
             </Button>
-            
           </a>
         </NavbarItem>
       </NavbarContent>

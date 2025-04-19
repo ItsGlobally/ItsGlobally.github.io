@@ -6,7 +6,8 @@ export default function AboutPage() {
   return (
     <div className="flex flex-col items-center gap-6 p-6">
       <h1 className={title() + " whitespace-nowrap text-2xl md:text-4xl"}>
-        bedtwL Server – Explore exciting game modes: Free-for-All and SMP worlds.
+        bedtwL Server – Explore exciting game modes: Free-for-All and SMP
+        worlds.
       </h1>
 
       {/* FFA Card */}
@@ -16,19 +17,24 @@ export default function AboutPage() {
           <p>Engage in thrilling PvP combat with these exciting features:</p>
           <ul className="text-left list-disc list-inside">
             <li>
-              <strong>Hotbar Customization:</strong> Tailor your loadout to suit your playstyle.
+              <strong>Hotbar Customization:</strong> Tailor your loadout to suit
+              your playstyle.
             </li>
             <li>
-              <strong>Iconic Maps:</strong> Fight on maps inspired by Hypixel's Bedwars.
+              <strong>Iconic Maps:</strong> Fight on maps inspired by Hypixel's
+              Bedwars.
             </li>
             <li>
-              <strong>Dynamic Gameplay:</strong> Enjoy regular map rotations for endless variety.
+              <strong>Dynamic Gameplay:</strong> Enjoy regular map rotations for
+              endless variety.
             </li>
             <li>
-              <strong>Explosive Combat:</strong> Use fireballs to obliterate your opponents.
+              <strong>Explosive Combat:</strong> Use fireballs to obliterate
+              your opponents.
             </li>
             <li>
-              <strong>Skill Action:</strong> Kill players, earn skill points, and get the stronger skill to fight your opponents.
+              <strong>Skill Action:</strong> Kill players, earn skill points,
+              and get the stronger skill to fight your opponents.
             </li>
           </ul>
         </CardBody>
@@ -44,10 +50,12 @@ export default function AboutPage() {
               <strong>Pure Gameplay:</strong> No plugins, just pure survival.
             </li>
             <li>
-              <strong>Community Driven:</strong> Build, explore, and thrive with your friend. Or else do it yourself.
+              <strong>Community Driven:</strong> Build, explore, and thrive with
+              your friend. Or else do it yourself.
             </li>
             <li>
-              <strong>Timeless Adventure:</strong> Rediscover the original charm of Minecraft.
+              <strong>Timeless Adventure:</strong> Rediscover the original charm
+              of Minecraft.
             </li>
           </ul>
         </CardBody>
@@ -60,16 +68,20 @@ export default function AboutPage() {
           <p>Take survival to the next level with enhanced features:</p>
           <ul className="text-left list-disc list-inside">
             <li>
-              <strong>Jobs System:</strong> Earn coins by working in-game professions.
+              <strong>Jobs System:</strong> Earn coins by working in-game
+              professions.
             </li>
             <li>
-              <strong>Land Protection:</strong> Secure your builds with a land claim system. (It's broken now.)
+              <strong>Land Protection:</strong> Secure your builds with a land
+              claim system. (It's broken now.)
             </li>
             <li>
-              <strong>Armored Elytra:</strong> Soar through the skies with added defense.
+              <strong>Armored Elytra:</strong> Soar through the skies with added
+              defense.
             </li>
             <li>
-              <strong>Dynamic Economy:</strong> Trade and grow wealth with in-game currency.
+              <strong>Dynamic Economy:</strong> Trade and grow wealth with
+              in-game currency.
             </li>
           </ul>
         </CardBody>
@@ -82,13 +94,15 @@ export default function AboutPage() {
           <p>Challenge yourself with extended survival features:</p>
           <ul className="text-left list-disc list-inside">
             <li>
-              <strong>Extended Enchantments:</strong> Upgrade your gear beyond limits.
+              <strong>Extended Enchantments:</strong> Upgrade your gear beyond
+              limits.
             </li>
             <li>
               <strong>Custom Challenges:</strong> Face unique gameplay twists.
             </li>
             <li>
-              <strong>Endless Adventures:</strong> A survival experience without The End.
+              <strong>Endless Adventures:</strong> A survival experience without
+              The End.
             </li>
           </ul>
         </CardBody>
@@ -103,11 +117,7 @@ export default function AboutPage() {
         <Button color="primary">Join Discord</Button>
       </a>
       {/* Original Website Button */}
-      <a
-        href="https://bedtwl.com/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
+      <a href="https://bedtwl.com/" target="_blank" rel="noopener noreferrer">
         <Button color="primary">Original Website</Button>
       </a>
     </div>
