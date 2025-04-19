@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import {
   Navbar as HeroUINavbar,
@@ -7,8 +7,6 @@ import {
   NavbarItem,
 } from "@heroui/navbar";
 import { Select, SelectItem } from "@heroui/select";
-import { Kbd } from "@heroui/kbd";
-import { Input } from "@heroui/input";
 import { link as linkStyles } from "@heroui/theme";
 import NextLink from "next/link";
 import { useRouter } from "next/navigation";
@@ -16,6 +14,8 @@ import clsx from "clsx";
 import { useState } from "react";
 
 import { siteConfig } from "@/config/site";
+import { Github } from "lucide-react";
+import { Button } from "@heroui/button";
 
 export const serverItem = [
   { key: "bedtwlserver", label: "bedtwL Server", path: "/about/bedtwlserver" },
@@ -29,12 +29,13 @@ export const Navbar = () => {
   const handleServerChange = (keys: any) => {
     const selectedKey = Array.from(keys)[0] as string;
     setSelectedServer(selectedKey);
-    
+
     const selectedServer = serverItem.find(server => server.key === selectedKey);
     if (selectedServer) {
       router.push(selectedServer.path);
     }
   };
+
   return (
     <HeroUINavbar maxWidth="xl" position="sticky" className="flex">
       <NavbarContent className="flex basis-1/5 sm:basis-full" justify="start">
@@ -59,21 +60,36 @@ export const Navbar = () => {
             </NavbarItem>
           ))}
           <NavbarItem className="flex">
-          <Select
-            className="w-72"
-            label="About Servers"
-            placeholder="Select a server"
-            selectedKeys={selectedServer ? [selectedServer] : []}
-            variant="bordered"
-            onSelectionChange={handleServerChange}
-          >
-            {serverItem.map((server) => (
-              <SelectItem key={server.key}>{server.label}</SelectItem>
-            ))}
-          </Select>
-
+            <Select
+              className="w-72"
+              label="About Servers"
+              placeholder="Select a server"
+              selectedKeys={selectedServer ? [selectedServer] : []}
+              variant="bordered"
+              onSelectionChange={handleServerChange}
+            >
+              {serverItem.map((server) => (
+                <SelectItem key={server.key}>{server.label}</SelectItem>
+              ))}
+            </Select>
           </NavbarItem>
         </ul>
+      </NavbarContent>
+
+      <NavbarContent justify="end">
+        <NavbarItem>
+          <a
+            href="https://github.com/ItsGlobally/ItsGlobally.github.io"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-foreground hover:text-primary transition-colors"
+          >
+            <Button>
+              <Github className="w-5 h-5" />
+            </Button>
+            
+          </a>
+        </NavbarItem>
       </NavbarContent>
     </HeroUINavbar>
   );
