@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@font-face {
+    font-family: 'Torus';
+    src: url('/fonts/Torus-Bold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+  }
+
+  :root {
+    --font-torus: 'Torus', sans-serif;
+  }
+  
+  /* Apply Torus font globally */
+  body {
+    font-family: var(--font-torus), sans-serif;
+  }

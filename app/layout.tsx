@@ -8,7 +8,6 @@ import { Providers } from "./providers";
 import { siteConfig } from "@/config/site";
 import { fontSans } from "@/config/fonts";
 import { Navbar } from "@/components/navbar";
-
 export const metadata: Metadata = {
   title: {
     default: siteConfig.name,
@@ -37,7 +36,7 @@ export default function RootLayout({
       <head />
       <body
         className={clsx(
-          "min-h-screen bg-background font-sans antialiased",
+          "min-h-screen bg-background font-torus antialiased",
           fontSans.variable,
         )}
       >
