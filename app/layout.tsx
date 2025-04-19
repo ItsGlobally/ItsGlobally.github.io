@@ -47,7 +47,7 @@ export default function RootLayout({
               {children}
             </main>
             <footer className="w-full flex items-center justify-center py-3">
-                <span className="text-default-600">Powered by HeroUI + NextJS</span>
+                <span className="text-default-600">Powered by HeroUI + NextJS | Thanks to ChatGPT, it saves a lot of work for me.</span>
             </footer>
             </div>
         </Providers>

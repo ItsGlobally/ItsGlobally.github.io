@@ -140,6 +140,21 @@
     "@react-types/button" "3.11.0"
     "@react-types/shared" "3.28.0"
 
+"@heroui/card@^2.2.16":
+  version "2.2.16"
+  resolved "https://registry.yarnpkg.com/@heroui/card/-/card-2.2.16.tgz#8db06b6bcab995f23daafca47e06c18cb77f1c3c"
+  integrity sha512-mMptkJ3Yl8s9m5C4f2y9EvFojsCTS5RMKoLDhcdeR1HLIpriBE//ReZxCzCGo7rH3UfDPwPQgeOaVwgnyp3Txw==
+  dependencies:
+    "@heroui/react-utils" "2.1.8"
+    "@heroui/ripple" "2.2.12"
+    "@heroui/shared-utils" "2.1.7"
+    "@heroui/use-aria-button" "2.2.11"
+    "@react-aria/button" "3.12.1"
+    "@react-aria/focus" "3.20.1"
+    "@react-aria/interactions" "3.24.1"
+    "@react-aria/utils" "3.28.1"
+    "@react-types/shared" "3.28.0"
+
 "@heroui/code@2.2.12":
   version "2.2.12"
   resolved "https://registry.yarnpkg.com/@heroui/code/-/code-2.2.12.tgz#f0b0c1ada292c25815bdcb3b8bc460e965d2b1d9"
