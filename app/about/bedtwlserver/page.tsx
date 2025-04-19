@@ -1,13 +1,12 @@
-import { title } from "@/components/primitives";
 import { Button } from "@heroui/button";
 import { Card, CardBody } from "@heroui/card";
+import { title } from "@/components/primitives";
 
 export default function AboutPage() {
   return (
     <div className="flex flex-col items-center gap-6 p-6">
       <h1 className={title() + " whitespace-nowrap text-2xl md:text-4xl"}>
-        bedtwL Server – Explore exciting game modes: Free-for-All and SMP
-        worlds.
+        bedtwL Server – Explore exciting game modes: Free-for-All and SMP worlds.
       </h1>
 
       {/* FFA Card */}
@@ -73,7 +72,7 @@ export default function AboutPage() {
             </li>
             <li>
               <strong>Land Protection:</strong> Secure your builds with a land
-              claim system. (It's broken now.)
+              claim system. (It&apos;s broken now.)
             </li>
             <li>
               <strong>Armored Elytra:</strong> Soar through the skies with added
