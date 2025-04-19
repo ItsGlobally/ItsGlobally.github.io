@@ -11,7 +11,6 @@ export default function AboutPage() {
       <p>A trash Minecraft 1.8 PvP player.</p>
       <p>A trash osu! player.</p>
       <p>A trash JavaScript/TypeScript coder.</p>
-      <p>A Minecraft 1.8 PvP player.</p>
     </div>
   );
 }
