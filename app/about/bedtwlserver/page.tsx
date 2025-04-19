@@ -1,0 +1,11 @@
+import { title } from "@/components/primitives";
+
+export default function AboutPage() {
+  return (
+    <div>
+      <h1 className={title()}>bedtwL Server</h1>
+      <h2 className="text-2xl">A Taiwanese server with skill ffa.</h2>
+    </div>
+  );
+}
+
