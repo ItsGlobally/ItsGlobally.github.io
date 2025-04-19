@@ -1,12 +1,14 @@
 import { Button } from "@heroui/button";
 import { Card, CardBody } from "@heroui/card";
+
 import { title } from "@/components/primitives";
 
 export default function AboutPage() {
   return (
     <div className="flex flex-col items-center gap-6 p-6">
       <h1 className={title() + " whitespace-nowrap text-2xl md:text-4xl"}>
-        bedtwL Server – Explore exciting game modes: Free-for-All and SMP worlds.
+        bedtwL Server – Explore exciting game modes: Free-for-All and SMP
+        worlds.
       </h1>
 
       {/* FFA Card */}
@@ -20,7 +22,7 @@ export default function AboutPage() {
               your playstyle.
             </li>
             <li>
-              <strong>Iconic Maps:</strong> Fight on maps inspired by Hypixel's
+              <strong>Iconic Maps:</strong> Fight on maps inspired by Hypixel&apos;s
               Bedwars.
             </li>
             <li>
